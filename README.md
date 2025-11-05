@@ -4,13 +4,13 @@
 This project demonstrates 3D scene perception and object segmentation using low-cost stereo cameras. It leverages stereo camera calibration, disparity map computation, clustering, foreground-background segmentation, and voxel grid visualization for effective spatial understanding and segmentation in complex environments.
 
 ## Folder Structure
-- `calibrate.py` — Camera calibration script to generate intrinsic/extrinsic parameters and rectification maps, saved as `stereomaps.npz`.
 - `capture_images.py` — Script to capture stereo images needed for calibration.
+- `calibrate.py` — Camera calibration script to generate intrinsic/extrinsic parameters and rectification maps, saved as `stereomaps.npz`.
+- `stereomaps.npz` — Stereo calibration results containing rectification maps, camera matrices, distortion coefficients, and reprojection matrix.
 - `live_depth.py` — Real-time depth estimation from stereo cameras with disparity map generation.
 - `kmeans_clustering.py` — Uses k-means clustering on depth maps for segmentation.
 - `fg_bg_segmentation.py` — Foreground-background segmentation using disparity and morphological filters.
 - `voxel_grid.py` — Creates 3D voxel grid visualization from disparity maps.
-- `stereomaps.npz` — Stereo calibration results containing rectification maps, camera matrices, distortion coefficients, and reprojection matrix.
 
 ## Step-by-Step Workflow
 
